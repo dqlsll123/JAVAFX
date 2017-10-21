@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hdwt2supervisual.MyPlayerController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="open" />
+            </items>
+          </Menu>
+            <Menu fx:id="visualizersMenu" mnemonicParsing="false" text="visualize">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#ChangeToVisual" text="visualize1" />
+                  <MenuItem mnemonicParsing="false" onAction="#ChangeToImage" text="visualize2" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="bands">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#ChangeToBands1" text="25" />
+                  <MenuItem mnemonicParsing="false" onAction="#ChangeToBands2" text="50" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="vizPane" prefHeight="388.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="iv" fitHeight="368.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+            <Canvas fx:id="canvas" height="326.0" width="600.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
