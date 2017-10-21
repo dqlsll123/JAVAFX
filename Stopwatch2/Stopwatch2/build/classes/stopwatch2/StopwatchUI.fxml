@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stopwatch2.StopwatchUIController">
+    <stylesheets>
+        <URL value="@stopwatchui.css" />
+    </stylesheets>
+   <children>
+      <StackPane layoutY="94.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="175.0">
+         <children>
+            <ImageView fx:id="clockFace" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="hand" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+          
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
